@@ -1,0 +1,63 @@
+wandb_sweep_yaml = 'sweep.yaml'
+
+data_name = 'Medusa-annotate-00003-LCA-mask'
+num_proj = 4
+combination_proj = ''
+only_pci_vessels = True
+x_ray_type = 'roadmap'
+take_mask = True
+data_size = 512
+debug_mode = True
+
+use_weighted_sampling = False
+load_pose_shifts = False
+pose_shifts_id = '3b'
+load_pretrained_model = False
+pretrained_model_path = ''
+
+cam_weight = 1e-5
+entropy_weight = 0
+l1_weight = 0
+
+learn_first_view = False
+learn_iso_center = False
+learn_table = True
+learn_rotation = False
+
+learn_intensity = False
+
+use_nerf_acc = False
+early_stop_eps = 0
+alpha_thre = 0
+
+depth_samples_per_ray = 500
+outside_thresh = 1
+
+n_iters = 200000
+display_every = 1000
+save_every = 1000
+batch_size = 32768
+early_stop_iters = 2000
+
+lr = 1e-4
+lr_end_factor = 0.1
+lr_decay_steps = 100000
+
+pos_lr = 1e-3
+
+sample_mode = 'pixel'
+sample_weights_name = None
+img_sample_size = 1024
+raw_noise_std = 0
+
+pos_enc = 'freq_windowed'
+pos_enc_window_decay_steps = 100000
+pos_enc_basis = 5
+pos_enc_fourier_sigma = 5
+
+windowed_start = 0
+windowed_stop = 600000
+
+nerf_num_early_layers = 4
+nerf_num_late_layers = 0
+nerf_num_filters = 256

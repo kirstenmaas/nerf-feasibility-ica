@@ -1,0 +1,10 @@
+method: grid
+metric:
+  goal: minimize
+  name: train_loss
+parameters:
+  data_name:
+    values: ['Medusa-annotate-00003-LCA-mask']
+early_terminate:
+  type: hyperband
+  max_iter: 100000
